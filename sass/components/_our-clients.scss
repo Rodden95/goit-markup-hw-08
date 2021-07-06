@@ -1,0 +1,41 @@
+.our-clients {
+  display: flex;
+  .our-clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: $color-icons-our-team;
+
+    .icon__prop {
+      transition: fill 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+.our-clients__item {
+  .our-clients__icon {
+    width: 106px;
+    height: 60px;
+    fill: $color-icons-our-team;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.our-clients__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 5px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border-color: $color-accent;
+  }
+  &:hover .icon__prop,
+  &:focus .icon__prop {
+    fill: $color-accent;
+  }
+}

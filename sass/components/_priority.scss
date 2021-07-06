@@ -1,0 +1,35 @@
+.our-priority__container {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0 25px 0;
+  margin-bottom: 30px;
+  background-color: $color-what-we-do-sect;
+}
+.our-priority {
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $color-little-text;
+  }
+
+  display: flex;
+
+  .our-priority__item {
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
