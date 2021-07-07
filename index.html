@@ -20,36 +20,56 @@
 <body>
   <!-- хидер -->
   <header class="page-header">
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button class="mobile-menu__button-close">
+        <svg class="mobile-menu__svg js-close-menu">
+          <use href="./img/icons/icons-main-opt.svg#icon-close_40px"></use>
+        </svg>
+      </button>
+     <nav class="nav">
+       
+       <ul class="nav__list">
+         <li class="nav__item">
+           <a class="nav__link " href="./index.html">Студия</a>
+         </li>
+         <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a></li>
+         <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
+       </ul>
+     </nav>
+     <ul class="address__list">
+       <li class="address__item">
+         <a class="address__link" href="">
+           <svg class="icon icon--mail" viewbox="0 0 16 12">
+             <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
+           </svg>
+           info@devstudio.com
+         </a>
+       </li>
+       <li class="address__item">
+         <a class="address__link" href="">
+           <svg class="icon icon--tel" viewbox="0 0 10 16">
+             <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
+           </svg>
+           +38 096 111 11 11
+         </a>
+       </li>
+     </ul>
+    </div>
     <div class="container container--center">
-      <nav class="nav">
-        <a href="./index.html" class="nav__logo nav__logo--padding"><span
-            class="nav__logo nav__logo--web-color">Web</span>Studio</a>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link nav__link--active" href="./index.html">Студия</a>
-          </li>
-          <li class="nav__item"><a class="nav__link " href="./portfolio.html">Портфолио</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
-        </ul>
+      <nav class="mobile-nav">
+        <a href="./index.html" class="mobile-nav__logo mobile-nav__logo--padding"><span
+            class="mobile-nav__logo mobile-nav__logo--web-color">Web</span>Studio</a>
+        <button class="mobile-nav__button js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="mobile-nav__icon">
+            <use href="./img/icons/icons-main-opt.svg#icon-menu_40px">
+  
+            </use>
+          </svg>
+        </button>
       </nav>
-      <ul class="address__list">
-        <li class="address__item">
-          <a class="address__link" href="">
-            <svg class="icon icon--mail" viewbox="0 0 16 12">
-              <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com
-          </a>
-        </li>
-        <li class="address__item">
-          <a class="address__link" href="">
-            <svg class="icon icon--tel" viewbox="0 0 10 16">
-              <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11
-          </a>
-        </li>
-      </ul>
+      
+
+     
     </div>
     <!-- хидер конец-->
   </header>
@@ -58,9 +78,9 @@
     <div class="backdrop is-hidden" data-backdrop>
       <div class="modal">
 
-        <button data-close-modal class="button button--modal-style">
+        <button type="button" data-close-modal  class="button button--modal-style">
           <!-- <div class="modal-svg-container"> -->
-          <svg class="button__svg">
+          <svg class="button__svg js-open-menu">
             <use href="./img/icons/icons-main-opt.svg#icon-krest"></use>
 
           </svg>
@@ -546,6 +566,7 @@
     <!-- футер конец-->
   </footer>
   <script src="./script/script.js"></script>
+  <script src="./script/mobile-menu.js"></script>
 
 </body>
 

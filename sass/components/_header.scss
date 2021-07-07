@@ -2,6 +2,9 @@
 // @import 'C:/Users/DenyRo/Documents/GitHub/goit-markup-hw-07/sass/utils/variables';
 
 .container {
+  
+  // height: 60px;
+  padding: 10px 15px !important;
   &--center {
     // display: flex;
     // align-items: center;
@@ -9,27 +12,140 @@
 }
 .page-header {
   box-shadow: 0px 3px 0px 0px rgba(0, 0, 0, 0.25);
-
-  .address__list {
+  .mobile-nav{
+    // position: absolute;
+    display:flex;
+    // margin-bottom: 20px;
+  }
+  .mobile-nav__button{
+    height: 40px;
+    margin-left: auto;
+    border:none;
+    background: none;
+    padding: 0;
+  }
+  .mobile-nav__icon{
+    width: 40px;
+    height: 40px;
+    // display:flex;
+    &:hover{
+      fill: $color-accent;
+      cursor: pointer;
+    }
+  }
+  .mobile-nav__logo {
+    display:flex;
+    // justify-content: center;
+    align-items:center;
+    color: $color-logo;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+line-height: 28px;
+    letter-spacing: 0.03em;
+   
+    &--web-color {
+      color: $color-accent;
+    }
+    &--color {
+      color: $color-main-bg;
+    }
+  }
+  // .nav__logo
+  .mobile-menu.is-open{
+    position: absolute;
+    display:block;
+  }
+  .mobile-menu{
+    padding: 40px;
+    height: 796px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    display:none;
+    // visibility: hidden;
+    .mobile-menu__button-close{
+      border: none;
+      background: #fff;
+      margin-left: auto;
+      height: 40px;
+      display:flex;
+      padding: 10px 15px;
+      &:hover,
+      &:focus{
+        fill: $color-accent;
+      }
+    }
+  &__svg{
+    width: 40px;
+    height: 40px; 
+  }
+  .nav {
+    // height: 80px;
     // display: flex;
     // align-items: center;
+
+    .nav__list {
+      align-items: flex-start;
+
+      display: flex;
+      // justify-content: center;
+      flex-direction: column;
+      // margin-left: 93px;
+    }
+    .nav__item {
+      // position: relative;
+      // display: flex;
+      // align-items: center;
+      // height: 80px;
+      margin-bottom: 36px;
+      &:not(:first-child) {
+        // margin-left: 50px;
+      }
+    }
+    .nav__link {
+      &--active {
+        color: $color-accent;
+        &--active::before {
+          // position: absolute;
+          // top: calc(100% - 4px);
+          content: '';
+          width: 100%;
+          height: 4px;
+          border-radius: 4px;
+          background-color: $color-accent;
+        }
+      }
+      // padding: 32px 0;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 500;
+font-size: 40px;
+line-height: 47px;
+// text-align: center;
+letter-spacing: 0.02em;
+      color: inherit;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover,
+      &:focus {
+        color: $color-accent;
+      }
+    }
+  }
+  .address__list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
     // margin-left: auto;
   }
   .address__item:not(:first-child) {
     // margin-left: 50px;
   }
-  .icon {
-    // margin-right: 10px;
-    fill: currentColor;
-    &--mail {
-      width: 16px;
-      height: 12px;
-    }
-    &--tel {
-      width: 10px;
-      height: 16px;
-    }
-  }
+  
 
   .address__link {
     // display: flex;
@@ -54,58 +170,18 @@
       color: $color-accent;
       fill: $color-accent;
     }
-  }
-
-  .nav {
-    height: 80px;
-    // display: flex;
-    // align-items: center;
-
-    .nav__list {
-      // align-items: center;
-      // display: flex;
-      // margin-left: 93px;
-    }
-    .nav__item {
-      // position: relative;
-      // display: flex;
-      // align-items: center;
-      height: 80px;
-      &:not(:first-child) {
-        // margin-left: 50px;
+    .icon {
+      // margin-right: 10px;
+      fill: currentColor;
+      &--mail {
+        width: 16px;
+        height: 12px;
       }
-    }
-    .nav__logo--padding {
-      padding: 24px 0;
-    }
-    .nav__link {
-      &--active {
-        color: $color-accent;
-        &--active::before {
-          // position: absolute;
-          // top: calc(100% - 4px);
-          content: '';
-          width: 100%;
-          height: 4px;
-          border-radius: 4px;
-          background-color: $color-accent;
-        }
-      }
-      // padding: 32px 0;
-
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.02em;
-      color: inherit;
-
-      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-      &:hover,
-      &:focus {
-        color: $color-accent;
+      &--tel {
+        width: 10px;
+        height: 16px;
       }
     }
   }
+}
 }
