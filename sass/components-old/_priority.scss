@@ -1,17 +1,12 @@
 .our-priority__container {
   display: flex;
   justify-content: center;
-
   padding: 25px 0 25px 0;
   margin-bottom: 30px;
   background-color: $color-what-we-do-sect;
 }
 .our-priority {
-  // display: flex;
-
   &__title {
-    display: flex;
-    justify-content: center;
     font-weight: bold;
     font-size: 14px;
     line-height: 16px;
@@ -19,7 +14,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  .our-priority__text {
+  &__text {
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
@@ -27,15 +22,14 @@
     color: $color-little-text;
   }
 
-  // display: flex;
+  display: flex;
 
   .our-priority__item {
-    // width: calc((100% - 90px) / 4);
-    // margin-right: 30px;
-    margin-bottom: 30px;
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
 
     &:last-child {
-      margin-bottom: 0px;
+      margin-right: 0px;
     }
   }
 }

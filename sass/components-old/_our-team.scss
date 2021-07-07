@@ -2,24 +2,20 @@
   background-color: $color-what-we-do-sect;
 }
 .our-team {
-  // display: flex;
-  // flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
   .our-team__item {
-    &__img {
-      width: 450px;
-    }
-    // width: calc((100% - 90px) / 4);
-    // margin-right: 30px;
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: $color-main-bg;
-    margin-bottom: 30px;
 
     &:last-child {
       margin-right: 0px;
     }
     .our-team__description {
-      padding: 30px 0 24px 0;
+      padding: 30px 0;
 
       h3 {
         font-weight: 500;
