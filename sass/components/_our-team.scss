@@ -1,19 +1,76 @@
 .section--bg {
-  background-color: $color-what-we-do-sect;
+  background-color: #f5f4fa;
+
+  // padding-bottom: 94px !important;
 }
 .our-team {
-  // display: flex;
-  // flex-wrap: wrap;
+  @media (max-width: 767px) {
+    &__item:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    .our-team__item {
+      // width: calc((100% - 90px) / 4);
+      &:not(:nth-child(2n + 2)) {
+        margin-right: 30px;
+      }
+      &:not(:nth-child(n + 3)) {
+        margin-bottom: 30px;
+      }
+      // margin-bottom: 30px;
+      // @media (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+      // margin-right: 30px;
+      // margin-bottom: 30px;
+      // }
+      // &:last-child {
+      //   margin-bottom: 0px;
+      // }
+    }
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    // flex-wrap: wrap;
+    .our-team__item {
+      width: calc((100% - 90px) / 4);
+      // &:not(:nth-child(2n + 2)) {
+      margin-right: 30px;
+      margin-bottom: 0 !important;
 
+      // }
+      // &:not(:nth-child(n + 3)) {
+      //   margin-bottom: 30px;
+      // }
+      // margin-bottom: 30px;
+      // @media (min-width: 768px) {
+      // width: calc((100% - 30px) / 2);
+      // margin-right: 30px;
+      // margin-bottom: 30px;
+      // }
+      // &:last-child {
+      //   margin-bottom: 0px;
+      // }
+    }
+  }
   .our-team__item {
     &__img {
-      width: 450px;
+      @media (min-width: 480px) {
+        width: 450px;
+      }
+      @media (min-width: 1200px) {
+        width: 100%;
+        height: auto;
+      }
     }
+
     // width: calc((100% - 90px) / 4);
     // margin-right: 30px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background-color: $color-main-bg;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
 
     &:last-child {
       margin-right: 0px;

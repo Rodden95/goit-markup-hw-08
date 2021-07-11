@@ -42,15 +42,33 @@ ul {
 
 .container {
   margin: 0 auto;
-  // width: 1200px;
-  padding: 0 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .section {
   padding: 60px 0;
+  @media (min-width: 1200px) {
+    padding: 94px 0;
+  }
 }
 body {
   max-width: 480px;
+  @media (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1600px;
+  }
   margin: 0 auto;
 
   color: $color-all-text;
