@@ -148,6 +148,9 @@
 
   .img {
     width: 100%;
+    @media (min-width: 1200px) {
+      height: 294px;
+    }
   }
   &:hover,
   &:focus {
