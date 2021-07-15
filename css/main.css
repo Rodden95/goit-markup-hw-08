@@ -824,7 +824,6 @@
 }
 
 .hero .hero__title {
-  max-width: 360px;
   font-weight: 900;
   text-align: center;
   letter-spacing: 0.06em;
@@ -834,6 +833,7 @@
 
 @media (min-width: 768px) {
   .hero .hero__title {
+    max-width: unset;
     font-size: 26px;
     line-height: 42px;
   }
