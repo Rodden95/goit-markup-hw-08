@@ -77,48 +77,50 @@
   
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link " href="./index.html">Студия</a>
+                <a class="nav__link nav__link--active" href="./index.html">Студия</a>
               </li>
-              <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a></li>
+              <li class="nav__item"><a class="nav__link " href="./portfolio.html">Портфолио</a></li>
               <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <ul class="address__list">
-            <li class="address__item ">
-              <a class="address__link address__link--mail-style" href="">
-                <svg class="icon icon--mail" viewbox="0 0 16 12">
-                  <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="address__item ">
-              <a class="address__link address__link--tel-style" href="">
-                <svg class="icon icon--tel" viewbox="0 0 10 16">
-                  <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="social">
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="social__text">Instagram</span></a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="social__text">Twitter</span></a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="social__text">Facebook</span></a>
-            </li>
-            <li class="social__item">
-              <a href="" class="social__link">
-                <span class="social__text">LinkedIn</span></a>
-            </li>
-          </ul>
+          <div class="mobile-menu__container">
+            <ul class="address__list">
+              <li class="address__item ">
+                <a class="address__link address__link--mail-style" href="">
+                  <svg class="icon icon--mail" viewbox="0 0 16 12">
+                    <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="address__item ">
+                <a class="address__link address__link--tel-style" href="">
+                  <svg class="icon icon--tel" viewbox="0 0 10 16">
+                    <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
+            <ul class="social">
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <span class="social__text">Instagram</span></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <span class="social__text">Twitter</span></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <span class="social__text">Facebook</span></a>
+              </li>
+              <li class="social__item">
+                <a href="" class="social__link">
+                  <span class="social__text">LinkedIn</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
   
@@ -297,11 +299,11 @@
         <ul class="what-we-do">
           <li class="what-we-do__item">
             <div class="what-we-do__container">
-              <picture>
-                <source srcset="./img/index/img1640.jpg" media="(min-width: 1200px)" />
-                <source srcset="./img/index/img1.png" media="(min-width: 768px)" />
-                <img class="what-we-do__img" width="370" alt="example1" src="./img/index/img1.png" />
-              </picture>
+              <!-- <picture>
+                <source srcset="./img/index/img1@2x.jpg 2x, ./img/index/img1.png 1x" />
+                <source srcset="./img/index/img1.png 1x" /> -->
+                <img class="what-we-do__img" width="370" srcset="./img/index/img1@2x.jpg 2x, ./img/index/img1.png 1x" alt="example1" src="./img/index/img1.png" />
+              <!-- </picture>  -->
               <div class="what-we-do__title what-we-do__title--properties"></div>
               <h3 class="what-we-do__text">Десктопные приложения</h3>
             </div>
@@ -309,22 +311,22 @@
 
           <li class="what-we-do__item">
             <div class="what-we-do__container">
-              <picture>
-                <source srcset="./img/index/img2640.jpg" media="(min-width: 1200px)" />
-                <source srcset="./img/index/img2.png" media="(min-width: 768px)" />
-                <img class="what-we-do__img" width="370" alt="example2" src="./img/index/img2.png" />
-              </picture>
+              <!-- <picture>
+                <source srcset="./img/index/img2@2x.jpg 2x" />
+                <source srcset="./img/index/img2.png 1x, ./img/index/img2@2x.jpg 2x" /> -->
+                <img class="what-we-do__img" width="370" srcset="./img/index/img2.png 1x, ./img/index/img2@2x.jpg 2x" alt="example2" src="./img/index/img2.png" />
+              <!-- </picture> -->
               <div class="what-we-do__title what-we-do__title--properties"></div>
               <h3 class="what-we-do__text">Мобильные приложения</h3>
             </div>
           </li>
           <li class="what-we-do__item">
             <div class="what-we-do__container">
-              <picture>
-                <source srcset="./img/index/img3640.jpg" media="(min-width: 1200px)" />
-                <source srcset="./img/index/img3.png" media="(min-width: 768px)" />
-                <img class="what-we-do__img" width="370" alt="example3" src="./img/index/img3.png" />
-              </picture>
+              <!-- <picture>
+                <source srcset="./img/index/img3@2x.jpg 2x" />
+                <source srcset="./img/index/img3.png 1x, ./img/index/img3@2x.jpg 2x"/> -->
+                <img class="what-we-do__img" width="370" alt="example3" srcset="./img/index/img3.png 1x, ./img/index/img3@2x.jpg 2x" src="./img/index/img3.png" />
+              <!-- </picture> -->
               <!-- <img class="what-we-do__img"
                                         srcset="./img/index/img3.png x1, ./img/index/img3640.jpg x2"
  
@@ -343,11 +345,16 @@
         <h2 class="section__title">Наша команда</h2>
         <ul class="our-team">
           <li class="our-team__item">
-            <picture>
-              <source srcset="./img/index/img4@2x.jpg" media="(min-width: 1200px)" />
-              <source srcset="./img/index/img4.jpg" media="(min-width: 768px)" />
+            <!-- <picture>
+              <source srcset="./img/index/img4@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/index/img4.jpg 1x" media="(min-width: 768px)" />
               <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img4.jpg" />
-            </picture>
+            </picture> -->
+            <!-- <picture> -->
+              <!-- <source srcset="./img/index/img4@2x.jpg 2x" />
+              <source srcset="./img/index/img4.jpg 1x" /> -->
+              <img class="our-team__img" srcset="./img/index/img4@2x.jpg 2x, ./img/index/img4.jpg 1x" alt="Игорь Демьяненко" src="./img/index/img4.jpg" />
+            <!-- </picture> -->
             <div class="our-team__description">
               <h3>Игорь Демьяненко</h3>
               <p>Product Designer</p>
@@ -388,11 +395,18 @@
             </div>
           </li>
           <li class="our-team__item">
-            <picture>
-              <source srcset="./img/index/img5@2x.jpg" media="(min-width: 1200px)" />
-              <source srcset="./img/index/img5.jpg" media="(min-width: 768px)" />
+            <!-- <picture>
+              <source srcset="./img/index/img5@2x.jpg 2x" media="(min-width: 1200px)" />
+              <source srcset="./img/index/img5.jpg 1x" media="(min-width: 768px)" />
               <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img5.jpg" />
-            </picture>
+            </picture> -->
+            <!-- <picture>
+              <source srcset="./img/index/img5@2x.jpg 2x" />
+              <source srcset="./img/index/img5.jpg 1x" />
+              <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img5.jpg" />
+            </picture> -->
+            <img class="our-team__img" srcset="./img/index/img5@2x.jpg 2x, ./img/index/img5.jpg 1x" alt="Ольга Репина" src="./img/index/img5.jpg" />
+
             <div class="our-team__description">
               <h3>Ольга Репина</h3>
               <p>Frontend Developer</p>
@@ -435,11 +449,18 @@
 
           </li>
           <li class="our-team__item">
-            <picture>
+            <!-- <picture>
               <source srcset="./img/index/img6@2x.jpg" media="(min-width: 1200px)" />
               <source srcset="./img/index/img6.jpg" media="(min-width: 768px)" />
               <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img6.jpg" />
-            </picture>
+            </picture> -->
+            <!-- <picture>
+              <source srcset="./img/index/img6@2x.jpg 2x" />
+              <source srcset="./img/index/img6.jpg 1x" />
+              <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img6.jpg" />
+            </picture> -->
+            <img class="our-team__img" srcset="./img/index/img6@2x.jpg 2x, ./img/index/img6.jpg 1x" alt="Николай Тарасов" src="./img/index/img6.jpg" />
+
             <div class="our-team__description">
               <h3>Николай Тарасов</h3>
               <p>Marketing</p>
@@ -482,11 +503,16 @@
 
           </li>
           <li class="our-team__item">
-            <picture>
+            <!-- <picture>
               <source srcset="./img/index/img7@2x.jpg" media="(min-width: 1200px)" />
               <source srcset="./img/index/img7.jpg" media="(min-width: 768px)" />
               <img class="our-team__img" alt="Михаил Ермаков" src="./img/index/img7.jpg" />
-            </picture>
+            </picture> -->
+            <!-- <picture> -->
+              <!-- <source srcset="./img/index/img7@2x.jpg 2x, ./img/index/img7.jpg 1x" />
+              <source srcset="./img/index/img7.jpg 1x" /> -->
+              <img class="our-team__img" alt="Михаил Ермаков" srcset="./img/index/img7@2x.jpg 2x, ./img/index/img7.jpg 1x"  src="./img/index/img7.jpg" />
+            <!-- </picture> -->
             <!-- <img class="our-team__img" 
             @media (min-width:480px){
                         srcset="./img/index/img7.jpg x1, ./img/index/img7@2x.jpg x2"
@@ -641,10 +667,11 @@
           </ul>
         </div>
       </div>
+      <div class="spam-container">
+        <h3 class="spam-container__title">Подпишитесь на рассылку</h3>
 
       <form class="form" action="" name="subscribe-form">
         <label class="form__label">
-          <h3 class="form__title">Подпишитесь на рассылку</h3>
           <input class="form__input" type="email" placeholder="E-mail">
         </label>
         <button class="button" type="submit"><span class="button-text">Подписаться</span>
@@ -653,6 +680,7 @@
           </svg>
         </button>
       </form>
+      </div>
     </div>
 
 

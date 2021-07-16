@@ -53,7 +53,7 @@
         <!-- хидер конец-->
       </header>
       <header class="page-header page-header--mobile">
-      
+  
         <div class="container container--center container--mobile-padding">
           <nav class="mobile-nav">
       
@@ -76,48 +76,50 @@
       
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a class="nav__link " href="./index.html">Студия</a>
+                    <a class="nav__link" href="./index.html">Студия</a>
                   </li>
                   <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфолио</a></li>
                   <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
                 </ul>
               </nav>
-              <ul class="address__list">
-                <li class="address__item ">
-                  <a class="address__link address__link--mail-style" href="">
-                    <svg class="icon icon--mail" viewbox="0 0 16 12">
-                      <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
-                    </svg>
-                    info@devstudio.com
-                  </a>
-                </li>
-                <li class="address__item ">
-                  <a class="address__link address__link--tel-style" href="">
-                    <svg class="icon icon--tel" viewbox="0 0 10 16">
-                      <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
-                    </svg>
-                    +38 096 111 11 11
-                  </a>
-                </li>
-              </ul>
-              <ul class="social">
-                <li class="social__item">
-                  <a href="" class="social__link">
-                    <span class="social__text">Instagram</span></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link">
-                    <span class="social__text">Twitter</span></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link">
-                    <span class="social__text">Facebook</span></a>
-                </li>
-                <li class="social__item">
-                  <a href="" class="social__link">
-                    <span class="social__text">LinkedIn</span></a>
-                </li>
-              </ul>
+              <div class="mobile-menu__container">
+                <ul class="address__list">
+                  <li class="address__item ">
+                    <a class="address__link address__link--mail-style" href="">
+                      <svg class="icon icon--mail" viewbox="0 0 16 12">
+                        <use href="./img/icons/icons-main-opt.svg#icon-mail"></use>
+                      </svg>
+                      info@devstudio.com
+                    </a>
+                  </li>
+                  <li class="address__item ">
+                    <a class="address__link address__link--tel-style" href="">
+                      <svg class="icon icon--tel" viewbox="0 0 10 16">
+                        <use href="./img/icons/icons-main-opt.svg#icon-smartphone"></use>
+                      </svg>
+                      +38 096 111 11 11
+                    </a>
+                  </li>
+                </ul>
+                <ul class="social">
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <span class="social__text">Instagram</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <span class="social__text">Twitter</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <span class="social__text">Facebook</span></a>
+                  </li>
+                  <li class="social__item">
+                    <a href="" class="social__link">
+                      <span class="social__text">LinkedIn</span></a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
       
@@ -164,11 +166,11 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img1@2x.jpg" media="(min-width: 1200px)" />
-                  <source srcset="img/portfolio/img1.jpg" media="(min-width: 768px)" />
-                  <img class="img" width="370" alt="Технокряк" src="img/portfolio/img1.jpg" />
-                </picture>
+                  <source srcset="img/portfolio/img1.jpg, img/portfolio/img1@2x.jpg" /> -->
+                  <img class="img" width="370"  srcset="./img/portfolio/img1.jpg 1x, ./img/portfolio/img1@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img1.jpg" />
+                <!-- </picture> -->
                 <!-- <img class="img" src="img/portfolio/img1.jpg" alt="Технокряк" width="370" /> -->
               </div>
               <div class="title-port">
@@ -192,11 +194,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img2@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img2.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img2.jpg" />
-                </picture>              </div>
+                </picture>               -->
+                <img class="img" width="370"  srcset="./img/portfolio/img2.jpg 1x, ./img/portfolio/img2@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img2.jpg" />
+
+              </div>
               <div class="title-port">
                 <h3>Постер New Orlean vs Golden Star</h3>
                 <span>Дизайн</span>
@@ -215,11 +220,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img3@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img3.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img3.jpg" />
-                </picture>              </div>
+                </picture>           -->
+                <img class="img" width="370"  srcset="./img/portfolio/img3.jpg 1x, ./img/portfolio/img3@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img3.jpg" />
+
+                  </div>
               <div class="title-port">
                 <h3>Ресторан Seafood</h3>
                 <span>Приложение</span>
@@ -237,11 +245,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img4@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img4.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img4.jpg" />
-                </picture>              </div>
+                </picture>         -->
+                <img class="img" width="370"  srcset="./img/portfolio/img4.jpg 1x, ./img/portfolio/img4@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img4.jpg" />
+
+                    </div>
               <div class="title-port">
                 <h3>Проект Prime</h3>
                 <span>Маркетинг</span>
@@ -259,11 +270,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img5@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img5.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img5.jpg" />
-                </picture>              </div>
+                </picture>         -->
+                <img class="img" width="370"  srcset="./img/portfolio/img5.jpg 1x, ./img/portfolio/img5@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img5.jpg" />
+
+                    </div>
               <div class="title-port">
                 <h3>Проект Boxes</h3>
                 <span>Приложение</span>
@@ -281,11 +295,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img6@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img6.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img6.jpg" />
-                </picture>              </div>
+                </picture>            -->
+                <img class="img" width="370"  srcset="./img/portfolio/img6.jpg 1x, ./img/portfolio/img6@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img6.jpg" />
+
+                 </div>
               <div class="title-port">
                 <h3>Inspiration has no Borders</h3>
                 <span>Веб-сайт</span>
@@ -303,11 +320,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img7@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img7.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img7.jpg" />
-                </picture>              </div>
+                </picture>              -->
+                <img class="img" width="370"  srcset="./img/portfolio/img7.jpg 1x, ./img/portfolio/img7@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img7.jpg" />
+
+               </div>
               <div class="title-port">
                 <h3>Издание Limited Edition</h3>
                 <span>Дизайн</span>
@@ -325,11 +345,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img8@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img8.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img8.jpg" />
-                </picture>              </div>
+                </picture>              -->
+                <img class="img" width="370"  srcset="./img/portfolio/img8.jpg 1x, ./img/portfolio/img8@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img8.jpg" />
+
+               </div>
               <div class="title-port">
                 <h3>Проект LAB</h3>
                 <span>Маркетинг</span>
@@ -347,11 +370,14 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                 </div>
-                <picture>
+                <!-- <picture>
                   <source srcset="img/portfolio/img9@2x.jpg" media="(min-width: 1200px)" />
                   <source srcset="img/portfolio/img9.jpg" media="(min-width: 768px)" />
                   <img class="img" width="370" alt="Технокряк" src="img/portfolio/img9.jpg" />
-                </picture>              </div>
+                </picture>              -->
+                <img class="img" width="370"  srcset="./img/portfolio/img9.jpg 1x, ./img/portfolio/img9@2x.jpg 2x" alt="Технокряк" src="./img/portfolio/img9.jpg" />
+
+               </div>
               <div class="title-port">
                 <h3>Growing Business</h3>
                 <span>Приложение</span>
@@ -423,10 +449,11 @@
           </ul>
         </div>
       </div>
-  
+      <div class="spam-container">
+        <h3 class="spam-container__title">Подпишитесь на рассылку</h3>
+
       <form class="form" action="" name="subscribe-form">
         <label class="form__label">
-          <h3 class="form__title">Подпишитесь на рассылку</h3>
           <input class="form__input" type="email" placeholder="E-mail">
         </label>
         <button class="button" type="submit"><span class="button-text">Подписаться</span>
@@ -435,10 +462,11 @@
           </svg>
         </button>
       </form>
+      </div>
     </div>
-  
-  
-  
+
+
+
     <!-- футер конец-->
   </footer>
 <script src="./script/mobile-menu.js"></script>
